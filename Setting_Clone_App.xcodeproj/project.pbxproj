@@ -16,8 +16,8 @@
 		103F02352959D88B0013FC7A /* Setting_Clone_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F02342959D88B0013FC7A /* Setting_Clone_AppTests.swift */; };
 		103F023F2959D88B0013FC7A /* Setting_Clone_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F023E2959D88B0013FC7A /* Setting_Clone_AppUITests.swift */; };
 		103F02412959D88B0013FC7A /* Setting_Clone_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F02402959D88B0013FC7A /* Setting_Clone_AppUITestsLaunchTests.swift */; };
-		103F024F2959E0C30013FC7A /* ProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F024D2959E0C30013FC7A /* ProfileViewCell.swift */; };
-		103F02502959E0C30013FC7A /* ProfileViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 103F024E2959E0C30013FC7A /* ProfileViewCell.xib */; };
+		103F024F2959E0C30013FC7A /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F024D2959E0C30013FC7A /* ProfileCell.swift */; };
+		103F02502959E0C30013FC7A /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 103F024E2959E0C30013FC7A /* ProfileCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		103F023A2959D88B0013FC7A /* Setting_Clone_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Setting_Clone_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		103F023E2959D88B0013FC7A /* Setting_Clone_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting_Clone_AppUITests.swift; sourceTree = "<group>"; };
 		103F02402959D88B0013FC7A /* Setting_Clone_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting_Clone_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		103F024D2959E0C30013FC7A /* ProfileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCell.swift; sourceTree = "<group>"; };
-		103F024E2959E0C30013FC7A /* ProfileViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewCell.xib; sourceTree = "<group>"; };
+		103F024D2959E0C30013FC7A /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		103F024E2959E0C30013FC7A /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +106,8 @@
 				103F021D2959D88A0013FC7A /* AppDelegate.swift */,
 				103F021F2959D88A0013FC7A /* SceneDelegate.swift */,
 				103F02212959D88A0013FC7A /* ViewController.swift */,
-				103F024D2959E0C30013FC7A /* ProfileViewCell.swift */,
-				103F024E2959E0C30013FC7A /* ProfileViewCell.xib */,
+				103F024D2959E0C30013FC7A /* ProfileCell.swift */,
+				103F024E2959E0C30013FC7A /* ProfileCell.xib */,
 				103F02232959D88A0013FC7A /* Main.storyboard */,
 				103F02262959D88B0013FC7A /* Assets.xcassets */,
 				103F02282959D88B0013FC7A /* LaunchScreen.storyboard */,
@@ -237,7 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				103F02502959E0C30013FC7A /* ProfileViewCell.xib in Resources */,
+				103F02502959E0C30013FC7A /* ProfileCell.xib in Resources */,
 				103F022A2959D88B0013FC7A /* LaunchScreen.storyboard in Resources */,
 				103F02272959D88B0013FC7A /* Assets.xcassets in Resources */,
 				103F02252959D88A0013FC7A /* Main.storyboard in Resources */,
@@ -265,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				103F024F2959E0C30013FC7A /* ProfileViewCell.swift in Sources */,
+				103F024F2959E0C30013FC7A /* ProfileCell.swift in Sources */,
 				103F02222959D88A0013FC7A /* ViewController.swift in Sources */,
 				103F021E2959D88A0013FC7A /* AppDelegate.swift in Sources */,
 				103F02202959D88A0013FC7A /* SceneDelegate.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewCell: UITableViewCell {
+class ProfileCell: UITableViewCell {
 
     
     override func awakeFromNib() {
