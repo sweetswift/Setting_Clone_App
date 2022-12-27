@@ -20,6 +20,7 @@
 		103F02502959E0C30013FC7A /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 103F024E2959E0C30013FC7A /* ProfileCell.xib */; };
 		108CA880295B1E3C006CEC08 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108CA87E295B1E3C006CEC08 /* MenuCell.swift */; };
 		108CA881295B1E3C006CEC08 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108CA87F295B1E3C006CEC08 /* MenuCell.xib */; };
+		108CA883295B2A02006CEC08 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108CA882295B2A02006CEC08 /* SettingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		103F024E2959E0C30013FC7A /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		108CA87E295B1E3C006CEC08 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		108CA87F295B1E3C006CEC08 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		108CA882295B2A02006CEC08 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				103F022B2959D88B0013FC7A /* Info.plist */,
 				108CA87E295B1E3C006CEC08 /* MenuCell.swift */,
 				108CA87F295B1E3C006CEC08 /* MenuCell.xib */,
+				108CA882295B2A02006CEC08 /* SettingModel.swift */,
 			);
 			path = Setting_Clone_App;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				103F024F2959E0C30013FC7A /* ProfileCell.swift in Sources */,
 				108CA880295B1E3C006CEC08 /* MenuCell.swift in Sources */,
+				108CA883295B2A02006CEC08 /* SettingModel.swift in Sources */,
 				103F02222959D88A0013FC7A /* ViewController.swift in Sources */,
 				103F021E2959D88A0013FC7A /* AppDelegate.swift in Sources */,
 				103F02202959D88A0013FC7A /* SceneDelegate.swift in Sources */,
