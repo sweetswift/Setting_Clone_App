@@ -10,9 +10,7 @@ import UIKit
 class ProfileCell: UITableViewCell {
 
     @IBOutlet weak var profileImageView: UIImageView!
-    
     @IBOutlet weak var topTitleLabel: UILabel!
-    
     @IBOutlet weak var bottomDescriptionLabel: UILabel!
     //처음 시작 포인트
     override func awakeFromNib() {

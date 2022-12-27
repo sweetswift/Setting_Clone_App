@@ -25,9 +25,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        makeData()
+        
         settingTableView.delegate = self
         settingTableView.dataSource = self
-        
+        settingTableView.backgroundColor = UIColor(white: 245/255, alpha: 1)
         settingTableView.register(UINib(nibName: "ProfileCell", bundle: nil),forCellReuseIdentifier: "ProfileCell")
         
         settingTableView.register(UINib(nibName: "MenuCell", bundle: nil),forCellReuseIdentifier: "MenuCell")
@@ -49,13 +51,22 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 0  {
-            let cell = tableView.dequeueReusableCell(withIdentifier:       "ProfileCell", for: indexPath)
+        if indexPath.section == 0  {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath) as! ProfileCell
+            cell.topTitleLabel.text = settingModel[indexPath.section][indexPath.row].menuTitle
+            
+            
+            cell.profileImageView.image = UIImage(systemName: settingModel[indexPath.section][indexPath.row].leftImageName)
+            cell.bottomDescriptionLabel.text = settingModel[indexPath.section][indexPath.row].subTitle
             
             return cell
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier:       "MenuCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuCell
+        
+        cell.leftImageView.image = UIImage(systemName: settingModel[indexPath.section][indexPath.row].leftImageName)
+        cell.middleTitleLabel.text = settingModel[indexPath.section][indexPath.row].menuTitle
+        cell.rightImageView.image = UIImage(systemName: settingModel[indexPath.section][indexPath.row].rightImageName ?? "")
         
         return cell
         
