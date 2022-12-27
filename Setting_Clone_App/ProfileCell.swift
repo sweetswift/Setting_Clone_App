@@ -11,12 +11,20 @@ class ProfileCell: UITableViewCell {
 
     @IBOutlet weak var profileImageView: UIImageView!
     
+    @IBOutlet weak var topTitleLabel: UILabel!
     
+    @IBOutlet weak var bottomDescriptionLabel: UILabel!
     //처음 시작 포인트
     override func awakeFromNib() {
         super.awakeFromNib()
         let profileHeight = 60
         profileImageView.layer.cornerRadius = CGFloat(profileHeight / 2)
+        
+        topTitleLabel.textColor = .blue
+        topTitleLabel.font = UIFont.systemFont(ofSize: 20)
+        
+        bottomDescriptionLabel.textColor = .darkGray
+        bottomDescriptionLabel.font = UIFont.systemFont(ofSize: 16)
         
     }
 
