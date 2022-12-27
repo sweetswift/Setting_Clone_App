@@ -9,10 +9,15 @@ import UIKit
 
 class ProfileCell: UITableViewCell {
 
+    @IBOutlet weak var profileImageView: UIImageView!
     
+    
+    //처음 시작 포인트
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        let profileHeight = 60
+        profileImageView.layer.cornerRadius = CGFloat(profileHeight / 2)
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
