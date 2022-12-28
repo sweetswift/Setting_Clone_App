@@ -23,6 +23,8 @@
 		108CA883295B2A02006CEC08 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108CA882295B2A02006CEC08 /* SettingModel.swift */; };
 		108CA886295C60D9006CEC08 /* GenearlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108CA884295C60D9006CEC08 /* GenearlViewController.swift */; };
 		108CA889295C64AF006CEC08 /* GenearlViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108CA888295C64AF006CEC08 /* GenearlViewController.storyboard */; };
+		108CA88C295C841D006CEC08 /* MyIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108CA88A295C841D006CEC08 /* MyIDViewController.swift */; };
+		108CA88D295C841D006CEC08 /* MyIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108CA88B295C841D006CEC08 /* MyIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		108CA882295B2A02006CEC08 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 		108CA884295C60D9006CEC08 /* GenearlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenearlViewController.swift; sourceTree = "<group>"; };
 		108CA888295C64AF006CEC08 /* GenearlViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GenearlViewController.storyboard; sourceTree = "<group>"; };
+		108CA88A295C841D006CEC08 /* MyIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIDViewController.swift; sourceTree = "<group>"; };
+		108CA88B295C841D006CEC08 /* MyIDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				108CA882295B2A02006CEC08 /* SettingModel.swift */,
 				108CA884295C60D9006CEC08 /* GenearlViewController.swift */,
 				108CA888295C64AF006CEC08 /* GenearlViewController.storyboard */,
+				108CA88A295C841D006CEC08 /* MyIDViewController.swift */,
+				108CA88B295C841D006CEC08 /* MyIDViewController.xib */,
 			);
 			path = Setting_Clone_App;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 				103F022A2959D88B0013FC7A /* LaunchScreen.storyboard in Resources */,
 				108CA889295C64AF006CEC08 /* GenearlViewController.storyboard in Resources */,
 				108CA881295B1E3C006CEC08 /* MenuCell.xib in Resources */,
+				108CA88D295C841D006CEC08 /* MyIDViewController.xib in Resources */,
 				103F02272959D88B0013FC7A /* Assets.xcassets in Resources */,
 				103F02252959D88A0013FC7A /* Main.storyboard in Resources */,
 			);
@@ -287,6 +294,7 @@
 				108CA883295B2A02006CEC08 /* SettingModel.swift in Sources */,
 				108CA886295C60D9006CEC08 /* GenearlViewController.swift in Sources */,
 				103F02222959D88A0013FC7A /* ViewController.swift in Sources */,
+				108CA88C295C841D006CEC08 /* MyIDViewController.swift in Sources */,
 				103F021E2959D88A0013FC7A /* AppDelegate.swift in Sources */,
 				103F02202959D88A0013FC7A /* SceneDelegate.swift in Sources */,
 			);

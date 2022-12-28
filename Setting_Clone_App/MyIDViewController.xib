@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyIDViewController" customModule="Setting_Clone_App" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM5-rv-zRJ">
+                    <rect key="frame" x="20" y="67" width="54" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yca-OK-o7K">
+                    <rect key="frame" x="316" y="67" width="54" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="다음"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s91-YF-L6l">
+                    <rect key="frame" x="140" y="127" width="110" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xe-Lm-Ujm">
+                    <rect key="frame" x="20" y="183" width="350" height="71.666666666666686"/>
+                    <string key="text">iCloud 및 기타 Apple 서비스에 사용할 Apple ID로 로그인하십시오.
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjM-9f-92K">
+                    <rect key="frame" x="20" y="304.66666666666669" width="365" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvP-36-l9V">
+                    <rect key="frame" x="120" y="304.66666666666669" width="185" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XvP-36-l9V" firstAttribute="centerY" secondItem="yjM-9f-92K" secondAttribute="centerY" id="1ZK-kJ-AUn"/>
+                <constraint firstItem="yjM-9f-92K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="BaN-xH-ujy"/>
+                <constraint firstItem="bM5-rv-zRJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FA5-6G-Nl2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yca-OK-o7K" secondAttribute="trailing" constant="20" id="Mbb-YM-JVj"/>
+                <constraint firstItem="XvP-36-l9V" firstAttribute="top" secondItem="8Xe-Lm-Ujm" secondAttribute="bottom" constant="50" id="Nk0-g1-NAM"/>
+                <constraint firstItem="8Xe-Lm-Ujm" firstAttribute="top" secondItem="s91-YF-L6l" secondAttribute="bottom" constant="20" id="ZAS-Z4-WhC"/>
+                <constraint firstItem="bM5-rv-zRJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="doY-7P-VyQ"/>
+                <constraint firstAttribute="trailing" secondItem="8Xe-Lm-Ujm" secondAttribute="trailing" constant="20" id="e1e-v2-MAI"/>
+                <constraint firstItem="Yca-OK-o7K" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="lA4-QV-JAc"/>
+                <constraint firstItem="8Xe-Lm-Ujm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="m4n-pR-cdd"/>
+                <constraint firstItem="s91-YF-L6l" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rI2-gB-bYp"/>
+                <constraint firstItem="yjM-9f-92K" firstAttribute="top" secondItem="8Xe-Lm-Ujm" secondAttribute="bottom" constant="50" id="tgb-Wt-7FY"/>
+                <constraint firstItem="s91-YF-L6l" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="tyt-b9-sOy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yjM-9f-92K" secondAttribute="trailing" constant="5" id="u5x-RP-vji"/>
+            </constraints>
+            <point key="canvasLocation" x="4.615384615384615" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
