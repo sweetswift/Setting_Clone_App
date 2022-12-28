@@ -47,7 +47,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
-   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return settingModel[section].count
@@ -59,7 +59,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1 && indexPath.row == 0 {
+        tableView.deselectRow(at: indexPath, animated: true )
+        
+        if indexPath.section == 0 && indexPath.row == 0 {
+            
+            let myidVC =  MyIDViewController(nibName: "MyIDViewController", bundle: nil)
+            
+            self.present(myidVC, animated: true)
+            
+            
+        } else if indexPath.section == 1 && indexPath.row == 0 {
             if let generalVC = UIStoryboard(name: "GenearlViewController", bundle: nil).instantiateViewController(identifier: "GenearlViewController") as?
                 GenearlViewController {
                 self.navigationController?.pushViewController(generalVC, animated: true)
