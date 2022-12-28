@@ -21,6 +21,8 @@
 		108CA880295B1E3C006CEC08 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108CA87E295B1E3C006CEC08 /* MenuCell.swift */; };
 		108CA881295B1E3C006CEC08 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108CA87F295B1E3C006CEC08 /* MenuCell.xib */; };
 		108CA883295B2A02006CEC08 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108CA882295B2A02006CEC08 /* SettingModel.swift */; };
+		108CA886295C60D9006CEC08 /* GenearlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108CA884295C60D9006CEC08 /* GenearlViewController.swift */; };
+		108CA887295C60D9006CEC08 /* GenearlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108CA885295C60D9006CEC08 /* GenearlViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		108CA87E295B1E3C006CEC08 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		108CA87F295B1E3C006CEC08 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		108CA882295B2A02006CEC08 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		108CA884295C60D9006CEC08 /* GenearlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenearlViewController.swift; sourceTree = "<group>"; };
+		108CA885295C60D9006CEC08 /* GenearlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenearlViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				108CA87E295B1E3C006CEC08 /* MenuCell.swift */,
 				108CA87F295B1E3C006CEC08 /* MenuCell.xib */,
 				108CA882295B2A02006CEC08 /* SettingModel.swift */,
+				108CA884295C60D9006CEC08 /* GenearlViewController.swift */,
+				108CA885295C60D9006CEC08 /* GenearlViewController.xib */,
 			);
 			path = Setting_Clone_App;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 				108CA881295B1E3C006CEC08 /* MenuCell.xib in Resources */,
 				103F02272959D88B0013FC7A /* Assets.xcassets in Resources */,
 				103F02252959D88A0013FC7A /* Main.storyboard in Resources */,
+				108CA887295C60D9006CEC08 /* GenearlViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 				103F024F2959E0C30013FC7A /* ProfileCell.swift in Sources */,
 				108CA880295B1E3C006CEC08 /* MenuCell.swift in Sources */,
 				108CA883295B2A02006CEC08 /* SettingModel.swift in Sources */,
+				108CA886295C60D9006CEC08 /* GenearlViewController.swift in Sources */,
 				103F02222959D88A0013FC7A /* ViewController.swift in Sources */,
 				103F021E2959D88A0013FC7A /* AppDelegate.swift in Sources */,
 				103F02202959D88A0013FC7A /* SceneDelegate.swift in Sources */,

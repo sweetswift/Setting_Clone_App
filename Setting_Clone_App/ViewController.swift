@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        makeData()
+       
         
         settingTableView.delegate = self
         settingTableView.dataSource = self
@@ -33,6 +33,8 @@ class ViewController: UIViewController {
         settingTableView.register(UINib(nibName: "ProfileCell", bundle: nil),forCellReuseIdentifier: "ProfileCell")
         
         settingTableView.register(UINib(nibName: "MenuCell", bundle: nil),forCellReuseIdentifier: "MenuCell")
+        
+        makeData()
     }
     
     
