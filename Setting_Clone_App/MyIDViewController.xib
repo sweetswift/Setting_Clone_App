@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyIDViewController" customModule="Setting_Clone_App" customModuleProvider="target">
             <connections>
+                <outlet property="cancelButton" destination="bM5-rv-zRJ" id="Nd7-ih-jat"/>
+                <outlet property="emailTextField" destination="XvP-36-l9V" id="VHZ-Pa-NIS"/>
+                <outlet property="nextButton" destination="Yca-OK-o7K" id="Dhp-yH-vJp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,12 +22,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM5-rv-zRJ">
-                    <rect key="frame" x="20" y="67" width="54" height="35"/>
+                    <rect key="frame" x="19.999999999999996" y="67" width="53.666666666666657" height="34.333333333333343"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                    <connections>
+                        <action selector="doCancel:" destination="-1" eventType="touchUpInside" id="kdg-fa-RNh"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yca-OK-o7K">
-                    <rect key="frame" x="316" y="67" width="54" height="35"/>
+                    <rect key="frame" x="316.33333333333331" y="67" width="53.666666666666686" height="34.333333333333343"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="다음"/>
                 </button>
@@ -43,39 +49,114 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjM-9f-92K">
-                    <rect key="frame" x="20" y="304.66666666666669" width="365" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="20" y="304.66666666666669" width="66.333333333333329" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvP-36-l9V">
-                    <rect key="frame" x="120" y="304.66666666666669" width="185" height="21"/>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvP-36-l9V">
+                    <rect key="frame" x="106.33333333333334" y="304.66666666666669" width="273.66666666666663" height="20.333333333333314"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rs-mh-3Lf">
+                    <rect key="frame" x="0.0" y="335" width="390" height="0.33333333333331439"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.29999999999999999" id="dZh-RR-y8V"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4w-dZ-GTU">
+                    <rect key="frame" x="0.0" y="294.33333333333331" width="390" height="0.33333333333331439"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.29999999999999999" id="jan-Kc-IWh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJf-8d-ULW">
+                    <rect key="frame" x="61.333333333333343" y="365.33333333333331" width="267.33333333333326" height="34.333333333333314"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Apple ID가 없거나 잊어버렸습니까?"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pTw-QX-x03">
+                    <rect key="frame" x="30" y="439.66666666666669" width="330" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icloud.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DeB-MR-IfI">
+                            <rect key="frame" x="0.0" y="1.3333333333333321" width="50" height="46.333333333333343"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="DeB-MR-IfI" secondAttribute="height" id="XGg-AI-b4t"/>
+                                <constraint firstAttribute="height" constant="50" id="czN-y6-fUV"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appletv" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ojH-dn-Ngj">
+                            <rect key="frame" x="70" y="0.99999999999999645" width="50" height="48.333333333333329"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ojH-dn-Ngj" secondAttribute="height" multiplier="1:1" id="sOI-wM-9hW"/>
+                                <constraint firstAttribute="height" constant="50" id="yMw-PF-zSF"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ORP-6e-MXy">
+                            <rect key="frame" x="140" y="3" width="50" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="09Z-uT-Z9E"/>
+                                <constraint firstAttribute="width" secondItem="ORP-6e-MXy" secondAttribute="height" id="SZD-Ur-dTb"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eraser.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="roh-U3-tPC">
+                            <rect key="frame" x="210" y="1.3333333333333321" width="50" height="47"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Ce5-ie-OsS"/>
+                                <constraint firstAttribute="width" secondItem="roh-U3-tPC" secondAttribute="height" id="ttk-YO-kBS"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GrN-hg-NIE">
+                            <rect key="frame" x="280" y="1" width="50" height="48.666666666666671"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="GrN-hg-NIE" secondAttribute="height" id="lCB-hl-ruo"/>
+                                <constraint firstAttribute="height" constant="50" id="qae-xK-wjU"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="XvP-36-l9V" firstAttribute="centerY" secondItem="yjM-9f-92K" secondAttribute="centerY" id="1ZK-kJ-AUn"/>
+                <constraint firstItem="pTw-QX-x03" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1eJ-Yu-KkF"/>
+                <constraint firstItem="rJf-8d-ULW" firstAttribute="top" secondItem="7Rs-mh-3Lf" secondAttribute="bottom" constant="30" id="3Gf-hj-bAL"/>
+                <constraint firstItem="c4w-dZ-GTU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Pt-b4-gLP"/>
+                <constraint firstItem="rJf-8d-ULW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8rD-h3-3eo"/>
                 <constraint firstItem="yjM-9f-92K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="BaN-xH-ujy"/>
                 <constraint firstItem="bM5-rv-zRJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FA5-6G-Nl2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XvP-36-l9V" secondAttribute="trailing" constant="10" id="JXI-AT-eBA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yca-OK-o7K" secondAttribute="trailing" constant="20" id="Mbb-YM-JVj"/>
                 <constraint firstItem="XvP-36-l9V" firstAttribute="top" secondItem="8Xe-Lm-Ujm" secondAttribute="bottom" constant="50" id="Nk0-g1-NAM"/>
+                <constraint firstItem="XvP-36-l9V" firstAttribute="top" secondItem="c4w-dZ-GTU" secondAttribute="bottom" constant="10" id="UEj-gI-eFU"/>
                 <constraint firstItem="8Xe-Lm-Ujm" firstAttribute="top" secondItem="s91-YF-L6l" secondAttribute="bottom" constant="20" id="ZAS-Z4-WhC"/>
+                <constraint firstItem="7Rs-mh-3Lf" firstAttribute="top" secondItem="XvP-36-l9V" secondAttribute="bottom" constant="10" id="bmz-Ub-cCA"/>
                 <constraint firstItem="bM5-rv-zRJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="doY-7P-VyQ"/>
                 <constraint firstAttribute="trailing" secondItem="8Xe-Lm-Ujm" secondAttribute="trailing" constant="20" id="e1e-v2-MAI"/>
+                <constraint firstItem="pTw-QX-x03" firstAttribute="top" secondItem="rJf-8d-ULW" secondAttribute="bottom" constant="40" id="kMK-kB-26s"/>
                 <constraint firstItem="Yca-OK-o7K" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="lA4-QV-JAc"/>
                 <constraint firstItem="8Xe-Lm-Ujm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="m4n-pR-cdd"/>
+                <constraint firstItem="7Rs-mh-3Lf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="phn-4s-Eab"/>
+                <constraint firstAttribute="trailing" secondItem="7Rs-mh-3Lf" secondAttribute="trailing" id="qUS-kV-kdj"/>
                 <constraint firstItem="s91-YF-L6l" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rI2-gB-bYp"/>
                 <constraint firstItem="yjM-9f-92K" firstAttribute="top" secondItem="8Xe-Lm-Ujm" secondAttribute="bottom" constant="50" id="tgb-Wt-7FY"/>
                 <constraint firstItem="s91-YF-L6l" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="tyt-b9-sOy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yjM-9f-92K" secondAttribute="trailing" constant="5" id="u5x-RP-vji"/>
+                <constraint firstItem="XvP-36-l9V" firstAttribute="leading" secondItem="yjM-9f-92K" secondAttribute="trailing" constant="20" id="u5x-RP-vji"/>
+                <constraint firstAttribute="trailing" secondItem="c4w-dZ-GTU" secondAttribute="trailing" id="zXU-Jv-xYL"/>
             </constraints>
             <point key="canvasLocation" x="4.615384615384615" y="-11.374407582938389"/>
         </view>
     </objects>
     <resources>
+        <image name="appletv" catalog="system" width="128" height="115"/>
+        <image name="eraser.fill" catalog="system" width="128" height="116"/>
+        <image name="icloud.fill" catalog="system" width="128" height="90"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="square.and.pencil.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
